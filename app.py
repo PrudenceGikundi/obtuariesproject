@@ -1,8 +1,8 @@
 from flask_wtf import CSRFProtect
 from flask import Flask, render_template, request, redirect, url_for, flash
 from datetime import datetime
-from obtuariesproject.models import Obituary, db
-from obtuariesproject.config import SECRET_KEY, SQLALCHEMY_DATABASE_URI
+from models import Obituary, db
+from config import SECRET_KEY, SQLALCHEMY_DATABASE_URI
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
